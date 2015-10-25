@@ -268,6 +268,7 @@ nav{
 	.intro{
 		position: relative;
 		z-index: 2;
+		margin-top: 2rem;
 		@media #{$sm} {
 			margin-top: 80vh;
 		}
@@ -275,9 +276,10 @@ nav{
 
 	.hero-image{
 		width: 100vw;
-		height: 75vh;
+		height: 50vh;
 		z-index: 1;
 		background: #eeeeee;
+		transform: scaleX(0.95) scaley(0.95);
 
 		@media #{$sm} {
 			width: 100vw;
@@ -293,13 +295,21 @@ nav{
 
 	.work-detail{
 		display: none;
+		// margin-top: -8rem;
+		transform: translate3d(0, 8rem, 0px);
+		opacity: 0;
+		transition: all 400ms cubic-bezier(0.075, 0.82, 0.165, 1);
+		&.showing{
+			transform: translate3d(0, 0rem, 0px);
+			opacity: 1;
+		}
 	}
 
 	
 
 
 	&.animated{
-		@media #{$sm} {
+		// @media #{$sm} {
 			.hero-image{
 				transition: all 400ms cubic-bezier(0.075, 0.82, 0.165, 1);
 			}
@@ -307,7 +317,7 @@ nav{
 			.work-title, .work-desc, .work-link-wrapper{
 				transition: all 1000ms cubic-bezier(0.075, 0.82, 0.165, 1);
 			}
-		}
+		// }
 	}
 
 
@@ -331,24 +341,24 @@ nav{
 
 	// TRANSITIONING
 	&.opening{
-		@media #{$sm} {
-			.hero-image{
-					transform: translate3d(0, 0%, 0px);
-					overflow: hidden;
-			}
+		.hero-image{
+				transform: translate3d(0, 0%, 0px) scaleX(1) scaleY(1);
+				overflow: hidden;
+		}
 
+		.work-desc{
+			transform: translate3d(-12rem, 0%, 0px);
+			opacity: 0;
+		}
+
+		.work-link-wrapper{
+			transform: translate3d(-8rem, 0%, 0px);
+			opacity: 0;
+		}
+
+		@media #{$sm} {
 			.work-title{
 				transform: translate3d(-4rem, 0%, 0px);
-			}
-
-			.work-desc{
-				transform: translate3d(-12rem, 0%, 0px);
-				opacity: 0;
-			}
-
-			.work-link-wrapper{
-				transform: translate3d(-8rem, 0%, 0px);
-				opacity: 0;
 			}
 		}
 	}
@@ -378,6 +388,7 @@ nav{
 				margin-top: 196px;
 				top: 0px;
 				left: 0px;
+				right: 0px;
 			}
 
 			.copy{
