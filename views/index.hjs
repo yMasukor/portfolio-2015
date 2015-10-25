@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{ title }}</title>
+    <base href="/"></head>
+            <link href='http://fonts.googleapis.com/css?family=Lato:400,900' rel='stylesheet' type='text/css'>
+        <!-- Place favicon.ico in the root directory -->
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/flexboxgrid.css">
+        <link rel="stylesheet" href="css/style.css">
+
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+
+  </head>
+  <body class="scrollLock">
+<!--   	<nav>
+  		<ul>
+  			<li><a href="./">Home</a></li>
+  			<li><a href="./works/threads">Threads</a></li>
+  			<li><a href="./works/digital-turbine">Digital Turbine</a></li>
+  			<li><a href="./works/xyo">Xyo</a></li>
+  			<li><a href="./works/archive">Archive</a></li>
+  			<li><a href="./contact">Contact</a></li>
+  		</ul>
+  	</nav> -->
+  	<section id="intro" class="col-xs-12 fill-viewport row">
+        <h1 class="h-padded col-sm-offset-1 col-md-offset-1">Yasin Masukor</h1>
+        <h2 class="h-padded col-xs-12 col-sm-offset-1 col-sm-12 col-md-10 col-lg-9">Digital Designer &amp; Creative Coder, based in Sydney, Australia.</h2>
+        <p class="h-padded col-sm-6 col-sm-offset-2 col-md-4 col-md-offset-2">Currently focused on creating meaningful experiences for screens &amp; spaces of all sizes.</p>
+	</section>
+
+
+	<div class="work-wrapper">
+        <section id="threads" class="col-xs-12 fill-viewport row work-container fixed-scroll-panel animated">
+
+
+            <div class="col-xs-12 fill-viewport hero-image panel-fixed ken-burns-panel" >
+                <!-- <div class="fill-parent ken-burns-image-slide">
+                    <div class="fill-parent background-image ken-burns-image" style="background-image:url(img/threads/hero.jpg)"></div>
+                </div>
+
+                <div class="fill-parent ken-burns-image-slide">
+                    <div class="fill-parent background-image ken-burns-image" style="background-image:url(img/threads/hero-2.jpg)"></div>
+                </div> -->
+            </div>
+
+            <div class="intro">
+                <div class="row">
+                    <h3 class="h-padded col-sm-offset-1 col-sm-10 work-title">Threads,<br/>Vivid 2015</h3>
+                    <p class="h-padded col-sm-4 col-sm-offset-2 col-md-4 col-md-offset-2 work-desc">An interactive audio-visual experience created for Vivid Sydney 2015</p>
+                    <div class="h-padded work-link-wrapper h-padded col-sm-4 col-sm-offset-2 col-md-4 col-md-offset-2">
+                        <a class="work-link" href="./works/threads" data-section="threads">See how I helped light up the night</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="work-detail">
+            	<div>
+            		<p class="h-padded col-sm-4 col-sm-offset-2 col-md-4 col-md-offset-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pretium quam at consectetur auctor. In imperdiet a orci vel rhoncus. Vivamus vitae turpis nunc. Vivamus a viverra nisi. Nulla laoreet augue eget vestibulum hendrerit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean accumsan vitae dolor id laoreet. Donec auctor imperdiet nibh id laoreet. Curabitur malesuada tortor sem, non scelerisque diam gravida in. Praesent posuere luctus augue, a tempor diam bibendum eu.</p>
+
+            		<p class="h-padded col-sm-4 col-sm-offset-2 col-md-4 col-md-offset-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pretium quam at consectetur auctor. In imperdiet a orci vel rhoncus. Vivamus vitae turpis nunc. Vivamus a viverra nisi. Nulla laoreet augue eget vestibulum hendrerit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean accumsan vitae dolor id laoreet. Donec auctor imperdiet nibh id laoreet. Curabitur malesuada tortor sem, non scelerisque diam gravida in. Praesent posuere luctus augue, a tempor diam bibendum eu.</p>
+
+            		<p class="h-padded col-sm-4 col-sm-offset-2 col-md-4 col-md-offset-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pretium quam at consectetur auctor. In imperdiet a orci vel rhoncus. Vivamus vitae turpis nunc. Vivamus a viverra nisi. Nulla laoreet augue eget vestibulum hendrerit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean accumsan vitae dolor id laoreet. Donec auctor imperdiet nibh id laoreet. Curabitur malesuada tortor sem, non scelerisque diam gravida in. Praesent posuere luctus augue, a tempor diam bibendum eu.</p>
+
+            		<p class="h-padded col-sm-4 col-sm-offset-2 col-md-4 col-md-offset-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pretium quam at consectetur auctor. In imperdiet a orci vel rhoncus. Vivamus vitae turpis nunc. Vivamus a viverra nisi. Nulla laoreet augue eget vestibulum hendrerit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean accumsan vitae dolor id laoreet. Donec auctor imperdiet nibh id laoreet. Curabitur malesuada tortor sem, non scelerisque diam gravida in. Praesent posuere luctus augue, a tempor diam bibendum eu.</p>
+            	</div>
+            </div>
+
+
+        </section>
+
+    </div>
+
+
+
+
+
+
+  	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/page.js"></script>
+    <script src="js/main.js"></script>
+
+  </body>
+</html>
