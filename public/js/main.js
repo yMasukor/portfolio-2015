@@ -1,11 +1,27 @@
 var pageTransitions = false;
-var isFirst = true;
+// var isFirst = true;
+var lastPage = null;
 
+
+//
+
+function async(callback){
+	window.setTimeout(function(){
+		callback();
+	}, 0)
+}
+
+
+
+//Page Routes
 var routes = {
-	onExit:function(foo, next){
+	onExit:function(context, next){
 		console.log('onExit');
 		pageTransitions = true;
-		isFirst = false;
+		lastPage = context;
+		context.foobar = "foobar";
+		// console.log('foo', context)
+
 		next();
 	},
 
@@ -15,12 +31,23 @@ var routes = {
 	},
 
 	onWork:function(context){
-		console.log('showing work page', context.params.workTitle);
-		showSection($('.work-container#'+context.params.workTitle), pageTransitions);
-		loadWorkDetailIfNeeded($('.work-container#'+context.params.workTitle), context.params.workTitle);
-		if(!isFirst){
-			
+		console.log('showing work page', context, lastPage);
+		
+		//If this is the first page, we won't need to load, the template should already contain the content.
+
+		//This logic is all fucked up, I should abstract the transition types and handle w a single function call
+		if(lastPage){
+			loadWorkDetailIfNeeded($('.work-container#'+context.params.workTitle), context.params.workTitle);
+
+			//Check what kind of transition we need
+			if(~lastPage.path.indexOf('works')){
+				console.log('last was a work page');
+				showSectionFromSection($('.work-container#'+context.params.workTitle), $('.work-container#'+lastPage.params.workTitle), pageTransitions);
+				return;
+			}
 		}
+
+		showSection($('.work-container#'+context.params.workTitle), pageTransitions);
 	},
 
 	onContact:function(){
@@ -56,6 +83,8 @@ function showSection(section, animated){
 
 	section.removeClass('hovered');
 	section.addClass('opening');
+
+	//TODO onAnimationEnd doesn't seem to fire reliably, so... timeouts? :/
 	window.setTimeout(function(){
 		$("body").animate({ scrollTop: section.find('.work-title').offset().top-196 }, duration, 'linear', function(){
 			$('body').addClass('scrollLock');
@@ -74,6 +103,62 @@ function showSection(section, animated){
 
 
 
+function showSectionFromSection(section, lastSection, animated){
+	//open the section, and move it off screen.
+
+
+	//check if transition should be slide up or down
+	console.log(section.data('index'), lastSection.data('index'))
+	// var transition = 'slide-down'
+
+	if(section.data('index') > lastSection.data('index')){
+		section.addClass('offset-down');
+		showSection(section, false);
+
+		//delay a tick
+
+		async(function(){
+			section.addClass('animated').removeClass('offset-down');
+			lastSection.addClass('animated offset-up');
+			
+			//TODO Eugh, nested timeouts - find a better way of doing this
+			window.setTimeout(function(){
+				//clean up
+				closeSection(lastSection, false);
+
+				section.removeClass('animated');
+				lastSection.removeClass('animated');
+				async(function(){
+					lastSection.removeClass('offset-up');
+				})
+			}, 400);
+		})
+
+	}else{
+		section.addClass('offset-up');
+		showSection(section, false);
+
+		//delay a tick
+		async(function(){
+			section.addClass('animated').removeClass('offset-up');
+			lastSection.addClass('animated offset-down');
+			
+			//TODO Eugh, nested timeouts - find a better way of doing this
+			window.setTimeout(function(){
+				//clean up
+				closeSection(lastSection, false);
+
+				section.removeClass('animated');
+				lastSection.removeClass('animated');
+				async(function(){
+					lastSection.removeClass('offset-down');
+				})
+			}, 400);
+		})
+	}
+}
+
+
 function showHomepage(){	
 	if($('.work-container.opened').length == 0){
 		console.log('on the homepage');
@@ -89,6 +174,9 @@ function showHomepage(){
 
 
 function closeSection(section, animated){
+
+	console.log('FUCK', section.attr('id'))
+
 	var duration = 0;
 	if(animated){
 		duration = 300;
@@ -102,11 +190,16 @@ function closeSection(section, animated){
 
 		section.find('.work-desc, .work-link-wrapper').css({'display':'block'});
 
-		section.animate({ scrollTop: 0}, 300, 'linear', function(){
+		section.animate({ scrollTop: 0}, duration, 'linear', function(){
 			section.removeClass('opening');
 			section.removeClass('opened');
 			$("body").scrollTop(section.find('.work-title').offset().top-196);
-			$('body').removeClass('scrollLock');
+
+			//If all sections are closed, let the body scroll again
+			if($('.opened, .opening').length == 0){
+				$('body').removeClass('scrollLock');
+			}
+			
 		});
 	}, duration)
 }
@@ -148,6 +241,12 @@ function loadWorkDetailIfNeeded(section, sectionName){
 
 
 $(document).ready(function(){
+
+	$('.work-link').hover(function(){
+		hoverSection($('#'+$(this).data('section')))
+	}, function(){
+		unhoverSection($('#'+$(this).data('section')))
+	});
 
 	$('.fixed-scroll-panel').waypoint({
 		handler:function(direction){
@@ -208,21 +307,36 @@ $(document).ready(function(){
 		},
 		offset: '-200%'
     });
+
+
+
+
+    $('.ken-burns-panel').KenBurns();
+
+
 });
 
 
 function inviewPanelStart(panel){
-	// panel.find('.ken-burns-panel').each(function(){
-	// 	$(this).KenBurns('start');
-	// });
+	panel.find('.ken-burns-panel').each(function(){
+		$(this).KenBurns('start');
+	});
 }
 
 function inviewPanelEnd(panel){
-	// panel.find('.ken-burns-panel').each(function(){
-	// 	$(this).KenBurns('stop');
-	// });
+	panel.find('.ken-burns-panel').each(function(){
+		$(this).KenBurns('stop');
+	});
 }
 
+
+function hoverSection(section){
+	section.addClass('hovered');
+}
+
+function unhoverSection(section){
+	section.removeClass('hovered');
+}
 
 
 

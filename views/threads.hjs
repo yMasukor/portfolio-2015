@@ -1,10 +1,34 @@
-<div>
-	<h6>Threads</h6>
-	<p class="h-padded col-sm-4 col-sm-offset-2 col-md-4 col-md-offset-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pretium quam at consectetur auctor. In imperdiet a orci vel rhoncus. Vivamus vitae turpis nunc. Vivamus a viverra nisi. Nulla laoreet augue eget vestibulum hendrerit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean accumsan vitae dolor id laoreet. Donec auctor imperdiet nibh id laoreet. Curabitur malesuada tortor sem, non scelerisque diam gravida in. Praesent posuere luctus augue, a tempor diam bibendum eu.</p>
 
-	<p class="h-padded col-sm-4 col-sm-offset-2 col-md-4 col-md-offset-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pretium quam at consectetur auctor. In imperdiet a orci vel rhoncus. Vivamus vitae turpis nunc. Vivamus a viverra nisi. Nulla laoreet augue eget vestibulum hendrerit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean accumsan vitae dolor id laoreet. Donec auctor imperdiet nibh id laoreet. Curabitur malesuada tortor sem, non scelerisque diam gravida in. Praesent posuere luctus augue, a tempor diam bibendum eu.</p>
 
-	<p class="h-padded col-sm-4 col-sm-offset-2 col-md-4 col-md-offset-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pretium quam at consectetur auctor. In imperdiet a orci vel rhoncus. Vivamus vitae turpis nunc. Vivamus a viverra nisi. Nulla laoreet augue eget vestibulum hendrerit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean accumsan vitae dolor id laoreet. Donec auctor imperdiet nibh id laoreet. Curabitur malesuada tortor sem, non scelerisque diam gravida in. Praesent posuere luctus augue, a tempor diam bibendum eu.</p>
+<section class="row center-text">
+	<div class="h-padded col-sm-8">
+		<p>Threads is an exploration of social connection &amp; play within a public setting.</p>
+		<p>Players work together drawing on one of two touchscreens to light up the night with beautiful generative visuals and music.</p>
+	</div>
+</section>
 
-	<p class="h-padded col-sm-4 col-sm-offset-2 col-md-4 col-md-offset-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pretium quam at consectetur auctor. In imperdiet a orci vel rhoncus. Vivamus vitae turpis nunc. Vivamus a viverra nisi. Nulla laoreet augue eget vestibulum hendrerit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean accumsan vitae dolor id laoreet. Donec auctor imperdiet nibh id laoreet. Curabitur malesuada tortor sem, non scelerisque diam gravida in. Praesent posuere luctus augue, a tempor diam bibendum eu.</p>
-</div>
+
+<section class="col-xs-12 fill-viewport fixed-scroll-panel">
+	<div class="col-xs-6 fill-viewport panel-fixed image" >
+			<!-- <div class="fill-parent ken-burns-image-slide">
+					<div class="fill-parent background-image ken-burns-image" style="background-image:url(img/threads/hero.jpg)"></div>
+			</div>
+
+			<div class="fill-parent ken-burns-image-slide">
+					<div class="fill-parent background-image ken-burns-image" style="background-image:url(img/threads/hero-2.jpg)"></div>
+			</div> -->
+	</div>
+
+	<div class="panel-scroll col-xs-6">
+			<div class="row">
+				<h3 class="h-padded col-sm-offset-1 col-sm-5 work-title">Everything Else</h3><div class="col-sm-6"></div>
+				<p class="h-padded col-sm-4 col-sm-offset-2 col-md-4 col-md-offset-2 work-desc">I like my new stuff better than my old stuff, but you can still check it out here</p>
+				<div class="h-padded work-link-wrapper h-padded col-sm-4 col-sm-offset-2 col-md-4 col-md-offset-2">
+						<a class="work-link" href="./works/digital-turbine" data-section="threads">See my older work</a>
+				</div>
+			</div>
+	</div>
+
+</section>
+<!-- <section class="row fill-viewport image"></section> -->
+	

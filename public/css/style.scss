@@ -62,13 +62,18 @@ h3	{
 	color: $light-text-1;
 
 	@media #{$sm} {
+		font-size: 5rem;
+		line-height: 5rem;
+	}
+
+	@media #{$md} {
 		font-size: 6rem;
 		line-height: 6rem;
 	}
 
-	@media #{$md} {
-		font-size: 8rem;
-		line-height: 8rem;
+	@media #{$lg} {
+		font-size: 7rem;
+		line-height: 7rem;
 	}
 
 }
@@ -288,8 +293,10 @@ nav{
 			position: absolute;
 			left:0px;
 			top: 0px;
-			transform: translate3d(46%, 0%, 0px) scaleX(0.95) scaley(0.95);
-			overflow: hidden;	
+			transform: translate3d(45%, 0%, 0px) scaleX(0.8) scaley(0.8);
+			overflow: hidden;
+			
+			// z-index: 100;
 		}
 	}
 
@@ -309,6 +316,7 @@ nav{
 
 
 	&.animated{
+		transition: all 400ms cubic-bezier(0.075, 0.82, 0.165, 1);
 		// @media #{$sm} {
 			.hero-image{
 				transition: all 400ms cubic-bezier(0.075, 0.82, 0.165, 1);
@@ -325,7 +333,7 @@ nav{
 	&.hovered{
 		.hero-image{
 			@media #{$sm} {
-				transform: translate3d(40%, 0%, 0px) scaleX(1) scaleY(1);
+				transform: translate3d(43%, 0%, 0px) scaleX(0.9) scaleY(0.9);
 				overflow: hidden;
 			}
 		}
@@ -333,7 +341,7 @@ nav{
 			transform: translate3d(-4rem, 0%, 0px);
 		}
 		.work-desc{
-			transform: translate3d(-6rem, 0%, 0px);
+			transform: translate3d(-5rem, 0%, 0px);
 			opacity: 0.5;
 		}
 	}
@@ -400,7 +408,7 @@ nav{
 		&.fixed-scroll-panel{
 
 			@media #{$sm} {
-				.panel-fixed{
+				.panel-fixed.hero-image{
 					position: static;
 
 					&.fixed{
@@ -419,6 +427,14 @@ nav{
 				}
 			}
 		}
+	}
+
+	&.offset-up{
+		transform:translate3d(0, -100%, 0);
+	}
+
+	&.offset-down{
+		transform:translate3d(0, 100%, 0);
 	}
 }
 
@@ -455,6 +471,7 @@ nav{
 
 	@media #{$sm} {
 		.panel-fixed{
+			position: absolute;
 			&.fixed{
 				position: fixed;	
 				/*margin-left: 96px;*/
@@ -561,14 +578,62 @@ nav{
 
 
 #threads{
-	/*background-color: #1996D2;*/
+	background-color: #3F0D9A;
 
 	h3, .work-link{
-		color: #5000FF;
+		color: #12FFFF;
+	}
+
+	.work-link:before{
+		background-color: #12FFFF;
+	}
+
+	p{
+		color: rgba(255,255,255,0.7)
+	}
+
+	.hero-image{
+		box-shadow: 0px 0px 72px rgba(0, 0, 0, 0.3);	
+	}
+
+	.work-detail{
+		background-color: #fff;
+
+		p{
+			color: rgba(0,0,0,0.87)
+		}
+	}
+}
+
+
+
+#digital-turbine{
+	background-color: #D1E1ED;
+
+	h3, .work-link{
+		color: #3F4AFF;
+	}
+
+	.work-link:before{
+		background-color: #3F4AFF;
+	}
+
+	p{
+		color: rgba(0,0,0,0.54)
 	}
 }
 
 	
 
+
+.work-detail{
+	.center-text{
+		justify-content: center;
+	}
+
+	.image{
+		background-color: #efefef;
+	}
+}
 
 
