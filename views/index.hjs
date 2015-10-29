@@ -67,12 +67,15 @@
 		<div class="work-wrapper">
 			<section id="digital-turbine" data-index="1" class="col-xs-12 fill-viewport row work-container fixed-scroll-panel animated">
 					<div class="col-xs-12 fill-viewport hero-image panel-fixed" >
+
+						<img id="dt-image" src="./images/digital-turbine/hero.jpg" width="100%" height="auto;">
+
 							<!-- <div class="fill-parent ken-burns-image-slide">
 									<div class="fill-parent background-image ken-burns-image" style="background-image:url(img/threads/hero.jpg)"></div>
 							</div>
 
 							<div class="fill-parent ken-burns-image-slide">
-									<div class="fill-parent background-image ken-burns-image" style="background-image:url(img/threads/hero-2.jpg)"></div>
+									
 							</div> -->
 
 
@@ -83,7 +86,7 @@
 									<h3 class="h-padded col-sm-offset-1 col-sm-5 work-title">Digital Turbine</h3><div class="col-sm-6"></div>
 									<p class="h-padded col-sm-4 col-sm-offset-2 col-md-4 col-md-offset-2 work-desc">Complete brand update for global mobile tech company Digital Turbine</p>
 									<div class="h-padded work-link-wrapper h-padded col-sm-4 col-sm-offset-2 col-md-4 col-md-offset-2">
-											<a class="work-link" href="./works/digital-turbine" data-section="threads">See how I refreshed an aging brand</a>
+											<a class="work-link" href="./works/digital-turbine" data-section="digital-turbine">See how I refreshed an aging brand</a>
 									</div>
 							</div>
 					</div>
@@ -100,6 +103,38 @@
 		<div class="work-wrapper">
 			<section id="xyo" data-index="1" class="col-xs-12 fill-viewport row work-container fixed-scroll-panel animated">
 					<div class="col-xs-12 fill-viewport hero-image panel-fixed" >
+
+						<div class="screenshot-container">
+
+							<div class="screenshot-outer">
+
+								<div class="screenshot-wrapper">
+									<div class="screenshot-helper"></div>
+									<div class="screenshot-inner fill-parent">
+										<img src="./images/xyo/home.png" class="screen-content vertical-scroll" width="100%">
+										<img  src="./images/xyo/screen-frame.png" class="screen-frame fill-parent" width="100%"  />
+									</div>
+								</div>
+							</div>
+
+							<div class="screenshot-outer">
+
+								<div class="screenshot-wrapper">
+									<div class="screenshot-helper"></div>
+									<div class="screenshot-inner fill-parent"></div>
+								</div>
+							</div>
+
+							<div class="screenshot-outer">
+
+								<div class="screenshot-wrapper">
+									<div class="screenshot-helper"></div>
+									<div class="screenshot-inner fill-parent"></div>
+								</div>
+							</div>
+
+							
+						</div>
 							<!-- <div class="fill-parent ken-burns-image-slide">
 									<div class="fill-parent background-image ken-burns-image" style="background-image:url(img/threads/hero.jpg)"></div>
 							</div>
@@ -116,13 +151,13 @@
 									<h3 class="h-padded col-sm-offset-1 col-sm-5 work-title">Xyo</h3><div class="col-sm-6"></div>
 									<p class="h-padded col-sm-4 col-sm-offset-2 col-md-4 col-md-offset-2 work-desc">A smarter way to discover apps &amp; games on Android</p>
 									<div class="h-padded work-link-wrapper h-padded col-sm-4 col-sm-offset-2 col-md-4 col-md-offset-2">
-											<a class="work-link" href="./works/digital-turbine" data-section="threads">See how I've helped improve app discovery</a>
+											<a class="work-link" href="./works/xyo" data-section="xyo">See how I've improved app discovery</a>
 									</div>
 							</div>
 					</div>
 
 					<div class="work-detail">
-						{{> digitalTurbine}}
+						{{> xyo}}
 					</div>
 			</section>
 		</div>
