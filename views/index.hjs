@@ -27,10 +27,30 @@
 				<li><a href="./contact">Contact</a></li>
 			</ul>
 		</nav> -->
+<!-- 		<div id="line" class="col-sm-1">
+			
+		</div> -->
+
 		<section id="intro" class="col-xs-12 fill-viewport row">
-				<h1 class="h-padded col-sm-offset-1 col-md-offset-1">Yasin Masukor</h1>
-				<h2 class="h-padded col-xs-12 col-sm-offset-1 col-sm-12 col-md-10 col-lg-9">Digital Designer &amp; Creative Coder, based in Sydney, Australia.</h2>
-				<p class="h-padded col-sm-6 col-sm-offset-2 col-md-4 col-md-offset-2">Currently focused on creating meaningful experiences for screens &amp; spaces of all sizes.</p>
+
+				<!-- <canvas id="particles" class="fill-parent"></canvas> -->
+				<!-- div id="main-title" class="h-padded">
+					<h1>Yasin<br/>Masukor</h1>
+				</div>
+				<div id="contact-prompt" class="h-padded">
+					<h1>Yasin<br/>Masukor</h1>
+				</div> -->
+
+				<nav class="horizontal-layout">
+					<h1 class="h-padded"><a href="./">Yasin<br/>Masukor</a></h1>
+					<div class="flex-2"></div>
+					<a id="contact-button" class="h-padded" href="./contact">Available for Hire<br/> Nov 01, 2015.</a>
+				</nav>
+
+				<div id="intro-text">
+					<h2 class="h-padded col-xs-12 col-sm-offset-1 col-sm-12 col-md-10 col-lg-9">Digital Designer &amp; Creative Coder, based in Sydney, Australia.</h2>
+					<p class="h-padded col-sm-6 col-sm-offset-2 col-md-4 col-md-offset-2">I create meaningful experiences for screens &amp; spaces of all&nbsp;sizes.</p>
+				</div>
 		</section>
 
 
@@ -38,20 +58,24 @@
 			<section id="threads" data-index="0" class="col-xs-12 fill-viewport row work-container fixed-scroll-panel animated">
 					<div class="col-xs-12 fill-viewport hero-image panel-fixed ken-burns-panel" >
 							<div class="fill-parent ken-burns-image-slide">
-									<div class="fill-parent background-image ken-burns-image" style="background-image:url(./images/threads/hero.jpg)"></div>
+								<div class="fill-parent background-image ken-burns-image" style="background-image:url(./images/threads/hero.jpg)"></div>
 							</div>
 
 							<div class="fill-parent ken-burns-image-slide">
-									<div class="fill-parent background-image ken-burns-image" style="background-image:url(./images/threads/hero-2.jpg)"></div>
-							</div>
-					</div>
+								<div class="fill-parent background-image ken-burns-image" style="background-image:url(./images/threads/hero-2.jpg)"></div>
+							</div>					</div>
 
 					<div class="intro">
 							<div class="row">
-									<h3 class="h-padded col-sm-offset-1 col-sm-10 work-title">Threads,<br/>Vivid 2015</h3>
-									<p class="h-padded col-sm-4 col-sm-offset-2 col-md-4 col-md-offset-2 work-desc">An interactive audio-visual experience created for Vivid Sydney 2015</p>
-									<div class="h-padded work-link-wrapper h-padded col-sm-4 col-sm-offset-2 col-md-4 col-md-offset-2">
-											<a class="work-link" href="./works/threads" data-section="threads">See how I helped light up the night</a>
+
+									<h2 class="h-padded col-sm-offset-0 col-sm-6 col-lg-offset-1 col-lg-5 work-title">Threads, Vivid 2015</h2>
+									<div class="col-sm-6"></div>
+									<div class="h-padded col-sm-6 col-md-offset-1 col-md-5 col-lg-4 col-lg-offset-2 work-desc">
+										<h4>Interactive, Installation</h4>
+										<p>An interactive audio-visual experience created for Vivid Sydney 2015</p>
+									</div>
+									<div class="h-padded work-link-wrapper h-padded col-sm-6 col-sm-offset-0 col-md-offset-1 col-md-5 col-lg-4 col-lg-offset-2">
+										<a class="work-link" href="./works/threads" data-section="threads">See how I helped light up the night</a>
 									</div>
 							</div>
 					</div>
@@ -66,9 +90,9 @@
 
 		<div class="work-wrapper">
 			<section id="digital-turbine" data-index="1" class="col-xs-12 fill-viewport row work-container fixed-scroll-panel animated">
-					<div class="col-xs-12 fill-viewport hero-image panel-fixed" >
+					<div class="col-xs-12 fill-viewport hero-image panel-fixed background-image"  style="background-image:url(./images/digital-turbine/hero.jpg)">
 
-						<img id="dt-image" src="./images/digital-turbine/hero.jpg" width="100%" height="auto;">
+						<!-- <img id="dt-image" src="./images/digital-turbine/hero.jpg" width="100%" height="auto;"> -->
 
 							<!-- <div class="fill-parent ken-burns-image-slide">
 									<div class="fill-parent background-image ken-burns-image" style="background-image:url(img/threads/hero.jpg)"></div>
@@ -83,9 +107,13 @@
 
 					<div class="intro">
 							<div class="row">
-									<h3 class="h-padded col-sm-offset-1 col-sm-5 work-title">Digital Turbine</h3><div class="col-sm-6"></div>
-									<p class="h-padded col-sm-4 col-sm-offset-2 col-md-4 col-md-offset-2 work-desc">Complete brand update for global mobile tech company Digital Turbine</p>
-									<div class="h-padded work-link-wrapper h-padded col-sm-4 col-sm-offset-2 col-md-4 col-md-offset-2">
+									<h2 class="h-padded col-sm-offset-0 col-sm-10 col-lg-offset-1 work-title">Digital Turbine</h2>
+									<div class="h-padded col-sm-6 col-md-offset-1 col-md-5 col-lg-4 col-lg-offset-2 work-desc">
+										<h4>Visual Identity, Web</h4>
+										<p>Complete brand update for global mobile tech company Digital Turbine</p>
+
+									</div>
+									<div class="h-padded work-link-wrapper h-padded col-sm-6 col-sm-offset-0 col-md-offset-1 col-md-5 col-lg-4 col-lg-offset-2">
 											<a class="work-link" href="./works/digital-turbine" data-section="digital-turbine">See how I refreshed an aging brand</a>
 									</div>
 							</div>
@@ -111,7 +139,9 @@
 								<div class="screenshot-wrapper">
 									<div class="screenshot-helper"></div>
 									<div class="screenshot-inner fill-parent">
-										<img src="./images/xyo/home.png" class="screen-content vertical-scroll" width="100%">
+										<div class="clipping-mask">
+											<img src="./images/xyo/home.png" id="xyo-home" class="screen-content vertical-scroll" width="100%">
+										</div>
 										<img  src="./images/xyo/screen-frame.png" class="screen-frame fill-parent" width="100%"  />
 									</div>
 								</div>
@@ -121,7 +151,12 @@
 
 								<div class="screenshot-wrapper">
 									<div class="screenshot-helper"></div>
-									<div class="screenshot-inner fill-parent"></div>
+									<div class="screenshot-inner fill-parent">
+										<div class="clipping-mask">
+											<img src="./images/xyo/explore.png" id="xyo-explore" class="screen-content vertical-scroll" width="100%">
+										</div>
+										<img  src="./images/xyo/screen-frame.png" class="screen-frame fill-parent" width="100%"  />
+									</div>
 								</div>
 							</div>
 
@@ -129,7 +164,12 @@
 
 								<div class="screenshot-wrapper">
 									<div class="screenshot-helper"></div>
-									<div class="screenshot-inner fill-parent"></div>
+									<div class="screenshot-inner fill-parent">
+										<div class="clipping-mask">
+											<img src="./images/xyo/detail.png" id="xyo-detail" class="screen-content vertical-scroll" width="100%">
+										</div>
+										<img  src="./images/xyo/screen-frame.png" class="screen-frame fill-parent" width="100%"  />
+									</div>
 								</div>
 							</div>
 
@@ -148,11 +188,11 @@
 
 					<div class="intro">
 							<div class="row">
-									<h3 class="h-padded col-sm-offset-1 col-sm-5 work-title">Xyo</h3><div class="col-sm-6"></div>
-									<p class="h-padded col-sm-4 col-sm-offset-2 col-md-4 col-md-offset-2 work-desc">A smarter way to discover apps &amp; games on Android</p>
-									<div class="h-padded work-link-wrapper h-padded col-sm-4 col-sm-offset-2 col-md-4 col-md-offset-2">
-											<a class="work-link" href="./works/xyo" data-section="xyo">See how I've improved app discovery</a>
-									</div>
+								<h2 class="h-padded col-sm-offset-0 col-sm-10 col-lg-offset-1 work-title">Xyo</h2>
+								<p class="h-padded col-sm-6 col-md-offset-1 col-md-5 col-lg-4 col-lg-offset-2 work-desc">A smarter way to discover apps &amp; games on Android</p>
+								<div class="h-padded work-link-wrapper h-padded col-sm-6 col-sm-offset-0 col-md-offset-1 col-md-5 col-lg-4 col-lg-offset-2">
+										<a class="work-link" href="./works/xyo" data-section="xyo">See how I've improved app discovery</a>
+								</div>
 							</div>
 					</div>
 
@@ -166,24 +206,34 @@
 
 		<div class="work-wrapper">
 			<section id="archive" data-index="1" class="col-xs-12 fill-viewport row work-container fixed-scroll-panel animated">
-					<div class="col-xs-12 fill-viewport hero-image panel-fixed" >
-							<!-- <div class="fill-parent ken-burns-image-slide">
-									<div class="fill-parent background-image ken-burns-image" style="background-image:url(img/threads/hero.jpg)"></div>
+					<div class="col-xs-12 fill-viewport hero-image panel-fixed horizontal-layout" >
+
+
+
+						
+						<div class="flex-3 vertical-layout">
+							<div class="flex-1 horizontal-layout">
+								<div class="background-image flex-2" style="background-image:url(./images/archive/milk-masuki.jpg)"></div>
+								<div class="background-image flex-1" style="background-image:url(./images/archive/loop.jpg)"></div>
 							</div>
+							<div class="horizontal-layout flex-1">
+								
+								<div class="background-image flex-1" style="background-image:url(./images/archive/catalyst.jpg)"></div>
+								<div class="background-image flex-2" style="background-image:url(./images/archive/tempest.png)"></div>
+							</div>
+						</div>
 
-							<div class="fill-parent ken-burns-image-slide">
-									<div class="fill-parent background-image ken-burns-image" style="background-image:url(img/threads/hero-2.jpg)"></div>
-							</div> -->
+						<div class="background-image flex-1" style="background-image:url(./images/archive/particle-toy.png)"></div>
 
-							
+						
 					</div>
 
 					<div class="intro">
 							<div class="row">
-									<h3 class="h-padded col-sm-offset-1 col-sm-5 work-title">Everything Else</h3><div class="col-sm-6"></div>
-									<p class="h-padded col-sm-4 col-sm-offset-2 col-md-4 col-md-offset-2 work-desc">I like my new stuff better than my old stuff, but you can still check it out here</p>
-									<div class="h-padded work-link-wrapper h-padded col-sm-4 col-sm-offset-2 col-md-4 col-md-offset-2">
-											<a class="work-link" href="./works/digital-turbine" data-section="threads">See my older work</a>
+									<h2 class="h-padded col-sm-offset-0 col-sm-10 col-lg-offset-1 work-title">Everything<br/>Else</h2>
+									<p class="h-padded col-sm-6 col-md-offset-1 col-md-5 col-lg-4 col-lg-offset-2 work-desc">I like my new stuff better than my old stuff, but you can still check it out here.</p>
+									<div class="h-padded work-link-wrapper h-padded col-sm-6 col-sm-offset-0 col-md-offset-1 col-md-5 col-lg-4 col-lg-offset-2">
+											<a class="work-link" href="./works/archive" data-section="archive">See my older work</a>
 									</div>
 							</div>
 					</div>
@@ -194,15 +244,45 @@
 			</section>
 		</div>
 
+		<section class="row copy-block center-container fill-viewport">
+			<div>
+				<h2 class="h-padded col-sm-offset-0 col-sm-10 col-lg-offset-1 work-title">I'm a firm believer in human-centric design.</h2>
+				<div class="row">
+					<div class="h-padded col-sm-offset-1 col-sm-6 col-lg-offset-2">
+						<p>I aim to make everything I create meaningful, engaging, and thoughtful.</p>
+
+						<p>I work across all stages of a project - from ideation, prototyping, design, and occasionally development. I'm interested in creating worthwhile experiences with people who believe in their work.</p>
+					</div>
+					<div class="col-sm-4 col-sm-offset-1 col-md-3">
+						<h4>Skills</h4>
+						<ul>
+							<li>Interaction Design</li>
+							<li>Product Ideation</li>
+							<li>Rapid Prototyping</li>
+							<li>Interface Design</li>
+							<li>Graphic Design</li>
+							<li>Consulting</li>
+
+
+
+						</ul>
+					</div>
+				</div>
+			</div>
+
+		</section>
 
 
 
 
 
-		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+		
 		<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
 		<script src="js/jquery.waypoints.min.js"></script>
 		<script src="js/jquery.kenburns.js"></script>
+		<script src="js/parti-COOLZ.js"></script>
+		<script src="js/proton-1.0.0.min.js"></script>
 		<script src="js/page.js"></script>
 		<script src="js/main.js"></script>
 

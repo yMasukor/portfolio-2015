@@ -75,30 +75,31 @@ function showSection(section, animated){
 
 	var duration = 0;
 	if(animated){
-		duration = 300;
+		duration = 600;
 		section.addClass('animated');
 	}else{
 		section.removeClass('animated');
 	}
 
+	
+	console.log(Math.min(duration, ($("body").scrollTop()-section.offset().top)))
 	section.removeClass('hovered');
-	section.addClass('opening');
+		section.addClass('opening');
 
-	//TODO onAnimationEnd doesn't seem to fire reliably, so... timeouts? :/
-	window.setTimeout(function(){
-		$("body").animate({ scrollTop: section.find('.work-title').offset().top-196 }, duration, 'linear', function(){
-			$('body').addClass('scrollLock');
-			console.log('open scroll', $('body').scrollTop(), $('#content-wrapper').height())
+	$("body").animate({ scrollTop: section.offset().top }, Math.min(duration, Math.abs(($("body").scrollTop()-section.offset().top))), 'swing', function(){
+		$('body').addClass('scrollLock');
+		console.log('open scroll', $('body').scrollTop(), $('#content-wrapper').height())
+		
+		
+
+		window.setTimeout(function(){
 			section.addClass('opened');
-
-			window.setTimeout(function(){
-				section.find('.work-desc, .work-link-wrapper').css({'display':'none'});
-				if(section.find('.work-detail')){
-					section.find('.work-detail').addClass('showing');
-				}
-			}, duration)
-		});
-	}, duration)
+			// section.find('.work-desc, .work-link-wrapper').css({'display':'none'});
+			if(section.find('.work-detail')){
+				section.find('.work-detail').addClass('showing');
+			}
+		}, duration)
+	});
 }
 
 
@@ -169,6 +170,8 @@ function showHomepage(){
 			closeSection($(this), true);
 		});
 	}
+
+	// setupProton();
 }
 
 
@@ -186,22 +189,26 @@ function closeSection(section, animated){
 	}
 
 	section.find('.work-detail').removeClass('showing');
-	window.setTimeout(function(){
+	// window.setTimeout(function(){
 
 		section.find('.work-desc, .work-link-wrapper').css({'display':'block'});
+		
 
-		section.animate({ scrollTop: 0}, duration, 'linear', function(){
+		section.animate({ scrollTop: 0}, Math.min(duration, Math.abs(section.scrollTop())), 'linear', function(){
 			section.removeClass('opening');
 			section.removeClass('opened');
-			$("body").scrollTop(section.find('.work-title').offset().top-196);
+			$("body").scrollTop(section.offset().top);
+
+
 
 			//If all sections are closed, let the body scroll again
 			if($('.opened, .opening').length == 0){
 				$('body').removeClass('scrollLock');
+				console.log($("body").scrollTop())
 			}
 			
 		});
-	}, duration)
+	
 }
 
 
@@ -305,7 +312,7 @@ $(document).ready(function(){
 				inviewPanelStart(e);
 			}
 		},
-		offset: '-200%'
+		offset: '-150%'
     });
 
 

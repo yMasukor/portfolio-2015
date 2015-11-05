@@ -21,7 +21,8 @@ router.get('/works/:workTitle', function(req, res, next) {
 		partials: {
 			threads: getPartialPath(req.workTitle, 'threads'),
 			digitalTurbine: getPartialPath(req.workTitle, 'digital-turbine'),
-			xyo: getPartialPath(req.workTitle, 'xyo')
+			xyo: getPartialPath(req.workTitle, 'xyo'),
+			archive: getPartialPath(req.workTitle, 'archive'),
 		}  
 	});
 });
