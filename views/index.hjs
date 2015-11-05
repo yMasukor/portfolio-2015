@@ -17,29 +17,12 @@
 
 	</head>
 	<body class="scrollLock">
-<!--   	<nav>
-			<ul>
-				<li><a href="./">Home</a></li>
-				<li><a href="./works/threads">Threads</a></li>
-				<li><a href="./works/digital-turbine">Digital Turbine</a></li>
-				<li><a href="./works/xyo">Xyo</a></li>
-				<li><a href="./works/archive">Archive</a></li>
-				<li><a href="./contact">Contact</a></li>
-			</ul>
-		</nav> -->
-<!-- 		<div id="line" class="col-sm-1">
-			
-		</div> -->
+
 
 		<section id="intro" class="col-xs-12 fill-viewport row">
 
 				<!-- <canvas id="particles" class="fill-parent"></canvas> -->
-				<!-- div id="main-title" class="h-padded">
-					<h1>Yasin<br/>Masukor</h1>
-				</div>
-				<div id="contact-prompt" class="h-padded">
-					<h1>Yasin<br/>Masukor</h1>
-				</div> -->
+
 
 				<nav class="horizontal-layout">
 					<h1 class="h-padded"><a href="./">Yasin<br/>Masukor</a></h1>
@@ -174,22 +157,17 @@
 							</div>
 
 							
-						</div>
-							<!-- <div class="fill-parent ken-burns-image-slide">
-									<div class="fill-parent background-image ken-burns-image" style="background-image:url(img/threads/hero.jpg)"></div>
-							</div>
-
-							<div class="fill-parent ken-burns-image-slide">
-									<div class="fill-parent background-image ken-burns-image" style="background-image:url(img/threads/hero-2.jpg)"></div>
-							</div> -->
-
-							
+						</div>							
 					</div>
 
 					<div class="intro">
 							<div class="row">
 								<h2 class="h-padded col-sm-offset-0 col-sm-10 col-lg-offset-1 work-title">Xyo</h2>
-								<p class="h-padded col-sm-6 col-md-offset-1 col-md-5 col-lg-4 col-lg-offset-2 work-desc">A smarter way to discover apps &amp; games on Android</p>
+								<div class="h-padded col-sm-6 col-md-offset-1 col-md-5 col-lg-4 col-lg-offset-2 work-desc">
+									<h4>Product, UX, Interface</h4>
+									<p>A smarter way to discover apps &amp; games on Android</p>
+								</div>
+								
 								<div class="h-padded work-link-wrapper h-padded col-sm-6 col-sm-offset-0 col-md-offset-1 col-md-5 col-lg-4 col-lg-offset-2">
 										<a class="work-link" href="./works/xyo" data-section="xyo">See how I've improved app discovery</a>
 								</div>
@@ -231,7 +209,10 @@
 					<div class="intro">
 							<div class="row">
 									<h2 class="h-padded col-sm-offset-0 col-sm-10 col-lg-offset-1 work-title">Everything<br/>Else</h2>
-									<p class="h-padded col-sm-6 col-md-offset-1 col-md-5 col-lg-4 col-lg-offset-2 work-desc">I like my new stuff better than my old stuff, but you can still check it out here.</p>
+									<div class="h-padded col-sm-6 col-md-offset-1 col-md-5 col-lg-4 col-lg-offset-2 work-desc">
+										<h4>Product, Interface, UX, Animation, Identity, Packaging, Interactive</h4>
+										<p>I like my new stuff better than my old stuff, but you can still check it out here.</p>
+									</div>
 									<div class="h-padded work-link-wrapper h-padded col-sm-6 col-sm-offset-0 col-md-offset-1 col-md-5 col-lg-4 col-lg-offset-2">
 											<a class="work-link" href="./works/archive" data-section="archive">See my older work</a>
 									</div>
@@ -249,24 +230,35 @@
 				<h2 class="h-padded col-sm-offset-0 col-sm-10 col-lg-offset-1 work-title">I'm a firm believer in human-centric design.</h2>
 				<div class="row">
 					<div class="h-padded col-sm-offset-1 col-sm-6 col-lg-offset-2">
+						<h4>About Me</h4>
 						<p>I aim to make everything I create meaningful, engaging, and thoughtful.</p>
 
 						<p>I work across all stages of a project - from ideation, prototyping, design, and occasionally development. I'm interested in creating worthwhile experiences with people who believe in their work.</p>
 					</div>
 					<div class="col-sm-4 col-sm-offset-1 col-md-3">
 						<h4>Skills</h4>
-						<ul>
-							<li>Interaction Design</li>
-							<li>Product Ideation</li>
-							<li>Rapid Prototyping</li>
-							<li>Interface Design</li>
-							<li>Graphic Design</li>
-							<li>Consulting</li>
+						<p>
+							Interaction Design<br/>
+							Product Ideation<br/>
+							Rapid Prototyping<br/>
+							Interface Design<br/>
+							Graphic Design<br/>
+							Consulting<br/>
 
+						</p>
 
-
-						</ul>
+						
 					</div>
+				</div>
+			</div>
+
+		</section>
+
+		<section id="contact-section" class="row copy-block center-container fill-viewport">
+			<div>
+				<h2 class="h-padded col-sm-offset-0 col-sm-10 col-lg-offset-1 work-title">Let's build something amazing.</h2>
+				<div class="h-padded col-sm-offset-1 col-sm-6 col-lg-offset-2">
+					
 				</div>
 			</div>
 
